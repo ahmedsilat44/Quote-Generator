@@ -12,37 +12,58 @@ body{
     align-items: center;
     height: 100vh;
     text-align: center;
-    background-image: linear-gradient(45deg, rgb(29, 28, 49), rgb(24, 18, 145));
 }
-.container {
+#halo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+#container {
     width: 550px;
     height: 450px;
 }
 .header {
+    display: flex;
     font-size: 1.2rem;
     border: solid 2px white;
     color: white;
     background-color: black;
-    padding: 5px;
+    padding: 10px;
     width: 80%;
     margin: 20px auto;
     border-radius: 4px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    transition: height 1s;
+}
+.header:hover {
+    height: 100px;
 }
 .main-content {
     width: 100%;
     height: 300px;
-    background-color: white;
     border-radius: 15px;
     padding: 50px 40px;
     box-shadow: 0 0 10px;
+    background-color: white;
+    transform-style: preserve-3d;
 }
 .main-content .text-area {
+    transform: translateZ(20px);
+    color: black;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.262);
     font-size: 1.5rem;
     line-height: 1.5;
 }
 .main-content .person {
+    transform: translateZ(20px);
     font-size: 1.6rem;
-    color: red;
+    color: rgb(51, 0, 179);
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.262);
     font-weight: bold;
     text-transform: uppercase;
     margin-top: 20px;
@@ -55,6 +76,7 @@ body{
     padding: 10px 15px;
     margin-top: 20px;
     border-radius: 5px;
+    cursor: pointer;
 }
 .button-area button:active {
     background-color: rgb(200, 200, 200);

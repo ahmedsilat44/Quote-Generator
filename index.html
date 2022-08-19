@@ -16,31 +16,68 @@
 </head>
 <body>
 
-
-	<div class="container">
-		<div class="header">
-			<h2>Quote Generator</h2>
-		</div>
-
-
-		<div class="main-content">
-			<div class="text-area">
-				<span class="quote">
-					"My concern is not whether God is on our side; my greatest concern is to be on God's side, for God is always right."
-				</span>
+	<div id="halo">
+		<div id="container">
+			<div class="header">
+				<h2>Quote Generator</h2>
 			</div>
-
-			<div class="person">
-				Abadaba Doo
-			</div>
-
-			<div class="button-area">
-				<button id="new-quote">New Quote</button>
+	
+	
+			<div class="main-content" data-tilt>
+				<div class="text-area">
+					<span class="quote">
+						"My concern is not whether God is on our side; my greatest concern is to be on God's side, for God is always right."
+					</span>
+				</div>
+	
+				<div class="person">
+					Abadaba Doo
+				</div>
+	
+				<div class="button-area">
+					<button id="new-quote">New Quote</button>
+				</div>
 			</div>
 		</div>
 	</div>
 
+	
+
 	<!-- Scripts -->
 	<script src="./script.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.22/vanta.net.min.js"></script>
+	<script type="text/javascript">
+			VANTA.NET({
+		el: "#halo",
+		mouseControls: true,
+		touchControls: true,
+		gyroControls: false,
+		minHeight: 200.00,
+		minWidth: 200.00,
+		scale: 1.00,
+		scaleMobile: 1.00,
+		color: 0x3d7cc5,
+		backgroundColor: 0x37
+	})
+	</script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.22/vanta.waves.min.js"></script>
+	<script>
+	VANTA.WAVES({
+		el: ".main-content",
+		mouseControls: true,
+		touchControls: true,
+		gyroControls: false,
+		minHeight: 200.00,
+		minWidth: 200.00,
+		scale: 1.00,
+		scaleMobile: 1.00,
+		color: 0x343434,
+		shininess: 42.00,
+		waveHeight: 28.50
+	})
+	</script> -->
 </body>
 </html>
