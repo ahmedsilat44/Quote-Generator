@@ -50,6 +50,12 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.22/vanta.net.min.js"></script>
 	<script type="text/javascript">
+		$(window).resize(function () {
+    var viewportWidth = $(window).width();
+    if (viewportWidth < 750) {
+        $(".main-content").removeAttr("data-tilt");
+    }
+});
 			VANTA.NET({
 		el: "#halo",
 		mouseControls: true,
