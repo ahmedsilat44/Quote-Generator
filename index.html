@@ -23,7 +23,7 @@
 			</div>
 	
 	
-			<div class="main-content" data-tilt>
+			<div class="main-content">
 				<div class="text-area">
 					<span class="quote">
 						"My concern is not whether God is on our side; my greatest concern is to be on God's side, for God is always right."
@@ -50,12 +50,12 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.22/vanta.net.min.js"></script>
 	<script type="text/javascript">
+		$(document).ready(function() {
 		$(window).resize(function () {
-    var viewportWidth = $(window).width();
-    if (viewportWidth < 750) {
-        $(".main-content").removeAttr("data-tilt");
+			if ($(window).width() < 960) {
+       $(".main-content").attr("data-tilt")
     }
-});
+		})});
 			VANTA.NET({
 		el: "#halo",
 		mouseControls: true,
